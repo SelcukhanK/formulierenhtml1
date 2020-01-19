@@ -1,61 +1,122 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>formulier html</title>
-  </head>
-  <body>
-      <h1>Een plan voor jouw ontwikkeling</h1>
 
-      <h4>Om een eerste stap te zetten naar een persoonlijk opleidingplan zul je eerst een paar vragen voor jezelf moeten beantoorden. Dit formulier helpt jou daar bij.</h4>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>formulier html</title>
+</head>
 
-      <form class="klas" action="http://bla.hosts.ma-cloud.nl/pop.php" method="get">
+<body>
+    <h1>Een plan voor jouw ontwikkeling</h1>
 
-      <h4>Naam:</h4>
-      <input type="text" name="naam">
+    <h4>Om een eerste stap te zetten naar een persoonlijk opleidingplan zul je eerst een paar vragen voor jezelf moeten beantoorden. Dit formulier helpt jou daar bij.</h4>
 
-      <h3>welbevinden</h3>
+  <form class="klas" action="http://bla.hosts.ma-cloud.nl/pop.php" method="get">
+
+    <h4>Naam:</h4>
+      <input type="text" id="naam" name="naam" placeholder="Ali Kanarie" autofocus required>
+
+    <h4>Klas:</h4>
+      <select name="klas" required >
+        <option value="" disabled selected>kies je klas</option>
+        <option value="md1b">md1b</option>
+        <option value="md1a">md1a</option>
+        <option value="md1c">md1c</option>
+      </select>
+
+
+    <fieldset class="welbevinden">
+      <legend>welbevinden</legend>
       <h4>Hoe positief ben je op dit moment over je opleiding?</h4>
-      <input type="radio" name="keuze1">0   <input type="radio" name="keuze1">1   <input type="radio" name="keuze1">2   <input type="radio" name="keuze1">3   <input type="radio" name="keuze1">4   <input type="radio" name="keuze1">5   <input type="radio" name="keuze1">6   <input type="radio" name="keuze1">7   <input type="radio" name="keuze1">8   <input type="radio" name="keuze1">9   <input type="radio" name="keuze1">10
+
+      <label><input type="radio" name="positief" value="0">0 <label><input type="radio" name="positief" value="1">1</label>
+      <label><input type="radio" name="positief" value="2">2 <label><input type="radio" name="positief" value="3">3</label>
+      <label><input type="radio" name="positief" value="4">4 <label><input type="radio" name="positief" value="5">5</label>
+      <label><input type="radio" name="positief" value="6">6 <label><input type="radio" name="positief" value="7">7</label>
+      <label><input type="radio" name="positief" value="8">8 <label><input type="radio" name="positief" value="9">9</label>
+      <label><input type="radio" name="positief" value="10">10</label>
       <br>
       <h4>Hoe gemotiveerd ben je momenteel om de opleiding af te maken?</h4>
-      <input type="radio" name="keuze">0   <input type="radio" name="keuze2">1   <input type="radio" name="keuze2">2   <input type="radio" name="keuze2">3   <input type="radio" name="keuze2">4   <input type="radio" name="keuze2">5   <input type="radio" name="keuze2">6   <input type="radio" name="keuze2">7   <input type="radio" name="keuze2">8   <input type="radio" name="keuze2">9   <input type="radio" name="keuze2">10
+
+      <label><input type="radio" name="motivatie" value="0">0</label> <label><input type="radio" name="motivatie" value="1">1</label>
+      <label><input type="radio" name="motivatie" value="2">2</label> <label><input type="radio" name="motivatie" value="3">3</label>
+      <label><input type="radio" name="motivatie" value="4">4</label> <label><input type="radio" name="motivatie" value="5">5</label>
+      <label><input type="radio" name="motivatie" value="6">6</label> <label><input type="radio" name="motivatie" value="7">7</label>
+      <label><input type="radio" name="motivatie" value="8">8</label> <label><input type="radio" name="motivatie" value="9">9</label>
+      <label><input type="radio" name="motivatie" value="10">10</label>
       <br>
       <h4>Hoeveel vertrouwen heb je momenteel in je eigen kunnen?</h4>
-      <input type="radio" name="keuze">0   <input type="radio" name="keuze3">1   <input type="radio" name="keuze3">2   <input type="radio" name="keuze3">3   <input type="radio" name="keuze3">4   <input type="radio" name="keuze3">5   <input type="radio" name="keuze3">6   <input type="radio" name="keuze3">7   <input type="radio" name="keuze3">8   <input type="radio" name="keuze3">9   <input type="radio" name="keuze3">10
+      <label><input type="radio" name="vertrouwen" value="0">0</label> <label><input type="radio" name="vertrouwen" value="1">1</label>
+      <label><input type="radio" name="vertrouwen" value="2">2</label> <label><input type="radio" name="vertrouwen" value="3">3</label>
+      <label><input type="radio" name="vertrouwen" value="4">4</label> <label><input type="radio" name="vertrouwen" value="5">5</label>
+      <label><input type="radio" name="vertrouwen" value="6">6</label> <label><input type="radio" name="vertrouwen" value="7">7</label>
+      <label><input type="radio" name="vertrouwen" value="8">8</label> <label><input type="radio" name="vertrouwen" value="9">9</label>
+      <label><input type="radio" name="vertrouwen" value="10">10</label>
+    </fieldset>
       <br>
       <br>
-      <h3>sterke kanten</h3>
-      <h4>wat zijn jouw sterke kanten?</h4>
-      <input type="checkbox">Coderen in HTML/CSS <input type="checkbox">Programmeren in Java <input type="checkbox">Scripting: programmeren in JavaScript <input type="checkbox">planning <input type="checkbox">Samenwerken
-      <br>
-      <br>
-      <h3>Nog te ontwikkelen<h3>
-      <h4>Aan welke skills moet je nog extra aandacht besteden?</h4>
-      <input type="checkbox">Coderen in HTML/CSS <input type="checkbox">Programmeren in Java <input type="checkbox">Scripting: programmeren in JavaScript <input type="checkbox">planning <input type="checkbox">Samenwerken
-      <br>
-      <br>
-      <h4>Wat zijn jouw favorieten vakken op school?</h4>
-      <input type="checkbox">Nederlands <input type="checkbox">Proj <input type="checkbox">Rekenen <input type="checkbox">Engels <input type="checkbox">Frontend development <input type="checkbox">Backend programming
-      <br>
-      <br>
-      <h4>Wat zijn jouw plannen voor de toekomst?</h4>
-      <textarea name="name" rows="8" cols="80"></textarea>
-      <br>
-      <input type="submit" name="v" value="verstuur">
-      </form>
-      <br>
-      <h4>Valide HTML5  Valide CSS</h4>
-  </body>
 
-  <footer>
-    <div id="validatie">
-      <a href="http://validator.w3.org/check?uri=referer" target="_blank">
-        <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
-      <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
-        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
-      </a>
-    </div>
-  </footer>
+  <fieldset class="sterkekanten"
+      <legend>sterke kanten</legend>
+      <h4>wat zijn jouw sterke kanten?</h4>
+      <input id="html" type="checkbox" name="skills1" value="html"><label for="html">Coderen in HTML/CSS</label>
+      <input id="php" type="checkbox" name="skills2" value="php"><label for="php">Programmeren in php</label>
+      <input id="javascript" type="checkbox" name="skills3" value="javascript"><label for="javascript">Scripting: programmeren in JavaScript</label>
+      <input id="planning" type="checkbox" name="skills4" value="planning"><label for="planning">plannen</label>
+      <input id="teamwork" type="checkbox" name="skills5" value="teamwork"><label for="teamwork">Samenwerken</label>
+  </fieldset>
+      <br>
+      <br>
+
+    <fieldset class="ontwikkelen"
+      <legend>Nog te ontwikkelen</legend>
+        <h4>Aan welke skills moet je nog extra aandacht besteden?</h4>
+        <input id="coding" type="checkbox" name="slechtere skills" value="coding"><label for="coding">Coderen in HTML/CSS </label>
+        <input id="programming" type="checkbox" name="slechtere skills" value="programming"><label for="programming">Programmeren in php</label>
+        <input id="scripting" type="checkbox" name="slechtere skills" value="scripting"><label for="scripting">Scripting: programmeren in JavaScript</label>
+        <input id="plannen" type="checkbox" name="slechtere skills" value="plannen"><label for="plannen">plannen</label>
+        <input id="samenwerken" type="checkbox" name="slechtere skills" value="samenwerken"><label for="samenwerken">Samenwerken</label>
+        <br>
+        <br>
+        <h4>Wat zijn jouw favorieten vakken op school?</h4>
+        <input type="checkbox" name="favorieten vak1" value="ned"><label for="ned">Nederlands</label>
+        <input type="checkbox" name="favorieten vak2" value="proj"><label for="proj">Project</label>
+        <input type="checkbox" name="favorieten vak3" value="rek"><label for="rek">Rekenen</label>
+        <input type="checkbox" name="favorieten vak4" value="eng"><label for="eng">Engels</label>
+        <input type="checkbox" name="favorieten vak5" value="fro"><label for="fro">Frontend development</label>
+        <input type="checkbox" name="favorieten vak6" value="bap"><label for="bap">Backend programming</label>
+        <br>
+        <br>
+        <h4>Wat zijn jouw plannen voor de toekomst?</h4>
+        <br>
+        <br>
+        <textarea name="future plans" rows="8" cols="80"></textarea>
+        <br>
+        </fieldset>
+        <br>
+        <br>
+  </form>
+  <form action="../login.php" method="get">
+    <fieldset class="submit">
+        <p>Naam:</p>
+        <label><input type="text" name="naam"></label> <br>
+        <p>Wenst u de nieuwsbrief te ontvangen?</p> <label><input type="checkbox" name="nieuwsbrief" value="nieuwsbrief"></label><br>
+        <label><input type="submit" value="verstuur"></label>
+    </fieldset>
+  </form>
+    <br>
+    <h4>Valide HTML5 Valide CSS</h4>
+</body>
+
+<footer>
+  <div id="validatie">
+    <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+      <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+      <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+    </a>
+  </div>
+</footer>
+
 </html>

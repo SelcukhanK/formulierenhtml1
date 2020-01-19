@@ -4,3 +4,15 @@
     border: 0;
     margin: 0 .3em;
 }
+
+.welbevinden label {
+  display: inline-block;
+  background: green;
+  padding: 1em;
+  cursor: pointer;
+  text-align: center;
+}
+
+input [type="radio"] {
+  display: block;
+}
