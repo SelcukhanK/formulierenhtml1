@@ -7,12 +7,15 @@
 
 .welbevinden label {
   display: inline-block;
-  background: green;
   padding: 1em;
   cursor: pointer;
   text-align: center;
 }
 
-input [type="radio"] {
+.welbevinden label:hover {
+  background-color: green;
+}
+
+input[type="radio"] {
   display: block;
 }
